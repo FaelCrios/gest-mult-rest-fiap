@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://db:5432/restaurante_db
+    username: user
+    password: password
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update # Cria as tabelas automaticamente para agilizar o desenvolvimento
+    show-sql: true # Útil para estudar o que o Hibernate está fazendo
+  data:
+    jpa:
+      repositories:
+        bootstrap-mode: default
+
+server:
+  port: 8080
