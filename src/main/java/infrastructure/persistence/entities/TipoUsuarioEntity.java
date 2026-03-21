@@ -7,7 +7,7 @@ import lombok.Setter;
 @Entity
 @Table(name = "tipos_usuario")
 @Getter
-@Setter // Usando o Lombok para manter o código limpo
+@Setter
 public class TipoUsuarioEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

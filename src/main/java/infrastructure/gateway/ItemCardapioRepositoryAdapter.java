@@ -29,7 +29,7 @@ public class ItemCardapioRepositoryAdapter implements ItemCardapioRepository {
     @Override
     public ItemCardapio salvar(ItemCardapio item, Long restauranteId) {
         var restauranteEntity = springRestauranteRepository.findById(restauranteId)
-                .orElseThrow(); // Já validado pelo UseCase
+                .orElseThrow();
 
         var entity = mapper.toEntity(item, restauranteEntity);
         return mapper.toDomain(springItemRepository.save(entity));

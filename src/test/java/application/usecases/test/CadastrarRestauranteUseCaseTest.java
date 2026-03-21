@@ -18,7 +18,7 @@ import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.*;
 
-@ExtendWith(MockitoExtension.class) // Habilita o Mockito
+@ExtendWith(MockitoExtension.class)
 class CadastrarRestauranteUseCaseTest {
 
     @Mock
@@ -54,7 +54,7 @@ class CadastrarRestauranteUseCaseTest {
     @Test
     void deveLancarErro_QuandoUsuarioNaoForDono() {
         TipoUsuario tipoCliente = new TipoUsuario();
-        tipoCliente.setNome("Cliente"); // Tipo errado
+        tipoCliente.setNome("Cliente");
 
         Usuario cliente = new Usuario();
         cliente.setId(2L);

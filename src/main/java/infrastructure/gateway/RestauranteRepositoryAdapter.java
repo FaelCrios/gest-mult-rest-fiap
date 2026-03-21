@@ -5,7 +5,7 @@ import domain.gateways.RestauranteRepository;
 import infrastructure.mappers.RestauranteMapper;
 import infrastructure.persistence.repositories.SpringRestauranteRepository;
 import org.springframework.stereotype.Component;
-import org.springframework.transaction.annotation.Transactional; // Importante!
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Optional;

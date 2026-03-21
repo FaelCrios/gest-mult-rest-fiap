@@ -13,7 +13,7 @@ import java.util.stream.Collectors;
 @Component
 public class TipoUsuarioRepositoryAdapter implements TipoUsuarioRepository {
     private final SpringTipoUsuarioRepository springRepository;
-    private final TipoUsuarioMapper mapper; // Você precisará de um Mapper para converter Entity <-> Domain
+    private final TipoUsuarioMapper mapper;
 
     public TipoUsuarioRepositoryAdapter(SpringTipoUsuarioRepository repository, TipoUsuarioMapper mapper) {
         this.springRepository = repository;

@@ -8,5 +8,5 @@ import java.util.Optional;
 
 @Repository
 public interface SpringTipoUsuarioRepository extends JpaRepository<TipoUsuarioEntity, Long> {
-    Optional<TipoUsuarioEntity> findByNome(String nome); // O Spring gera o SQL automaticamente
+    Optional<TipoUsuarioEntity> findByNome(String nome);
 }

@@ -26,12 +26,12 @@ class CriaUsuarioUseCaseTest {
 
         Usuario usuario = new Usuario();
         usuario.setNome("Teste da Silva");
-        usuario.setEmail("teste@email.com"); // Adicionado email
+        usuario.setEmail("teste@email.com");
 
         domain.entities.TipoUsuario tipo = new domain.entities.TipoUsuario();
         tipo.setId(1L);
         tipo.setNome("Cliente");
-        usuario.setTipo(tipo); // Adicionado tipo
+        usuario.setTipo(tipo);
 
         when(repository.salvar(usuario)).thenReturn(usuario);
 
