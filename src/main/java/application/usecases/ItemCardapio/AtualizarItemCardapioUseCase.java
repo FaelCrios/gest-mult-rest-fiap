@@ -22,6 +22,6 @@ public class AtualizarItemCardapioUseCase {
         existente.setCaminhoFoto(itemCardapio.getCaminhoFoto());
         existente.setDisponivelApenasNoRestaurante(itemCardapio.getDisponivelApenasNoRestaurante());
 
-        return itemCardapioRepository.salvar(existente, existente.getId());
+        return itemCardapioRepository.salvar(existente, existente.getRestauranteId());
     }
 }

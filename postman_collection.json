@@ -1,0 +1,330 @@
+{
+  "info": {
+    "_postman_id": "a1b2c3d4-e5f6-7890-1234-56789abcdef0",
+    "name": "GestMultiRest API",
+    "description": "Collection de testes para a API do Tech Challenge Fase 2 - GestMultiRest",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "1. Tipos de Usuário",
+      "item": [
+        {
+          "name": "Criar Tipo de Usuário (Dono)",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nome\": \"Dono de Restaurante\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/tipos-usuario",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "tipos-usuario"]
+            }
+          }
+        },
+        {
+          "name": "Criar Tipo de Usuário (Cliente)",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nome\": \"Cliente\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/tipos-usuario",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "tipos-usuario"]
+            }
+          }
+        },
+        {
+          "name": "Listar Tipos de Usuário",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/tipos-usuario",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "tipos-usuario"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "2. Usuários",
+      "item": [
+        {
+          "name": "Criar Usuário",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nome\": \"Rafael Colin\",\n  \"email\": \"rafael@email.com\",\n  \"tipoUsuarioId\": 1\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/usuarios",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "usuarios"]
+            }
+          }
+        },
+        {
+          "name": "Listar Usuários",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/usuarios",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "usuarios"]
+            }
+          }
+        },
+        {
+          "name": "Buscar Usuário por ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/usuarios/1",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "usuarios", "1"]
+            }
+          }
+        },
+        {
+          "name": "Atualizar Usuário",
+          "request": {
+            "method": "PUT",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nome\": \"Rafael Colin Editado\",\n  \"email\": \"rafael.novo@email.com\",\n  \"tipoUsuarioId\": 1\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/usuarios/1",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "usuarios", "1"]
+            }
+          }
+        },
+        {
+          "name": "Deletar Usuário",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/usuarios/1",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "usuarios", "1"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "3. Restaurantes",
+      "item": [
+        {
+          "name": "Cadastrar Restaurante",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nome\": \"Restaurante Sabor Paulista\",\n  \"endereco\": \"Avenida Paulista, 1000\",\n  \"tipoCozinha\": \"Brasileira\",\n  \"horarioFuncionamento\": \"11h as 23h\",\n  \"donoId\": 1\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/restaurantes",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "restaurantes"]
+            }
+          }
+        },
+        {
+          "name": "Listar Restaurantes",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/restaurantes",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "restaurantes"]
+            }
+          }
+        },
+        {
+          "name": "Buscar Restaurante por ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/restaurantes/1",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "restaurantes", "1"]
+            }
+          }
+        },
+        {
+          "name": "Atualizar Restaurante",
+          "request": {
+            "method": "PUT",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nome\": \"Sabor Paulista Atualizado\",\n  \"endereco\": \"Av Paulista, 1000\",\n  \"tipoCozinha\": \"Contemporânea\",\n  \"horarioFuncionamento\": \"12h as 00h\",\n  \"donoId\": 1\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/restaurantes/1",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "restaurantes", "1"]
+            }
+          }
+        },
+        {
+          "name": "Deletar Restaurante",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/restaurantes/1",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "restaurantes", "1"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "4. Itens do Cardápio",
+      "item": [
+        {
+          "name": "Adicionar Item ao Cardápio",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nome\": \"Feijoada Completa\",\n  \"descricao\": \"Acompanha arroz, couve, farofa e laranja\",\n  \"preco\": 65.50,\n  \"disponivelApenasNoRestaurante\": false,\n  \"caminhoFoto\": \"feijoada.jpg\",\n  \"restauranteId\": 1\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/itens-cardapio",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "itens-cardapio"]
+            }
+          }
+        },
+        {
+          "name": "Listar Todos os Itens",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/itens-cardapio",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "itens-cardapio"]
+            }
+          }
+        },
+        {
+          "name": "Buscar Item por ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/itens-cardapio/1",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "itens-cardapio", "1"]
+            }
+          }
+        },
+        {
+          "name": "Atualizar Item",
+          "request": {
+            "method": "PUT",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nome\": \"Feijoada Média\",\n  \"descricao\": \"Acompanha arroz e farofa\",\n  \"preco\": 45.00,\n  \"disponivelApenasNoRestaurante\": false,\n  \"caminhoFoto\": \"feijoada_media.jpg\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/itens-cardapio/1",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "itens-cardapio", "1"]
+            }
+          }
+        },
+        {
+          "name": "Deletar Item",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/itens-cardapio/1",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "itens-cardapio", "1"]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

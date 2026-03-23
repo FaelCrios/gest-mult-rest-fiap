@@ -2,6 +2,7 @@ package infrastructure.controllers.dtos;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 
 public record ItemCardapioRequest(
         @Schema(description = "Nome do prato", example = "Picanha na Chapa")
@@ -13,11 +14,11 @@ public record ItemCardapioRequest(
         String descricao,
 
         @Schema(description = "Preço unitário", example = "89.90")
-        @NotBlank(message = "Nome é obrigatório")
+        @NotNull(message = "Nome é obrigatório")
         Double preco,
 
         @Schema(description = "Se o item é exclusivo para consumo no local", example = "false")
-        @NotBlank(message="É necessário informar se o item é exclusivo de consumo no restaurante")
+        @NotNull(message="É necessário informar se o item é exclusivo de consumo no restaurante")
         Boolean disponivelApenasNoRestaurante,
 
         @Schema(description = "URL ou caminho da foto", example = "/imagens/picanha.jpg")
@@ -25,6 +26,6 @@ public record ItemCardapioRequest(
         String caminhoFoto,
 
         @Schema(description = "ID do restaurante ao qual o item pertence", example = "1")
-        @NotBlank(message="É necessário informar se o item é exclusivo de consumo no restaurante")
+        @NotNull(message="É necessário informar se o item é exclusivo de consumo no restaurante")
         Long restauranteId
 ) {}

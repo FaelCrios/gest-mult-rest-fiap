@@ -2,6 +2,7 @@ package infrastructure.controllers.dtos;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 
 public record UsuarioRequest(
         @Schema(description = "Nome completo", example = "Rafael Colin")
@@ -13,6 +14,6 @@ public record UsuarioRequest(
         String email,
 
         @Schema(description = "ID do tipo de usuário (ex: 1 para Dono)", example = "1")
-        @NotBlank(message = "O Id do tipo usuário é necessário")
+        @NotNull(message = "O Id do tipo usuário é necessário")
         Long tipoUsuarioId
 ) {}
