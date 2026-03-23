@@ -1,9 +1,10 @@
 {
   "info": {
-    "_postman_id": "a1b2c3d4-e5f6-7890-1234-56789abcdef0",
+    "_postman_id": "2673eee4-3ad3-459b-8e29-d1f2f04a9cca",
     "name": "GestMultiRest API",
     "description": "Collection de testes para a API do Tech Challenge Fase 2 - GestMultiRest",
-    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "25874649"
   },
   "item": [
     {
@@ -14,40 +15,58 @@
           "request": {
             "method": "POST",
             "header": [
-              { "key": "Content-Type", "value": "application/json" }
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
             ],
             "body": {
               "mode": "raw",
               "raw": "{\n  \"nome\": \"Dono de Restaurante\"\n}"
             },
             "url": {
-              "raw": "http://localhost:8080/api/tipos-usuario",
+              "raw": "http://localhost:8080/api/tipos-usuarios",
               "protocol": "http",
-              "host": ["localhost"],
+              "host": [
+                "localhost"
+              ],
               "port": "8080",
-              "path": ["api", "tipos-usuario"]
+              "path": [
+                "api",
+                "tipos-usuarios"
+              ]
             }
-          }
+          },
+          "response": []
         },
         {
           "name": "Criar Tipo de Usuário (Cliente)",
           "request": {
             "method": "POST",
             "header": [
-              { "key": "Content-Type", "value": "application/json" }
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
             ],
             "body": {
               "mode": "raw",
               "raw": "{\n  \"nome\": \"Cliente\"\n}"
             },
             "url": {
-              "raw": "http://localhost:8080/api/tipos-usuario",
+              "raw": "http://localhost:8080/api/tipos-usuarios",
               "protocol": "http",
-              "host": ["localhost"],
+              "host": [
+                "localhost"
+              ],
               "port": "8080",
-              "path": ["api", "tipos-usuario"]
+              "path": [
+                "api",
+                "tipos-usuarios"
+              ]
             }
-          }
+          },
+          "response": []
         },
         {
           "name": "Listar Tipos de Usuário",
@@ -55,13 +74,19 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "http://localhost:8080/api/tipos-usuario",
+              "raw": "http://localhost:8080/api/tipos-usuarios",
               "protocol": "http",
-              "host": ["localhost"],
+              "host": [
+                "localhost"
+              ],
               "port": "8080",
-              "path": ["api", "tipos-usuario"]
+              "path": [
+                "api",
+                "tipos-usuarios"
+              ]
             }
-          }
+          },
+          "response": []
         }
       ]
     },
@@ -73,7 +98,10 @@
           "request": {
             "method": "POST",
             "header": [
-              { "key": "Content-Type", "value": "application/json" }
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
             ],
             "body": {
               "mode": "raw",
@@ -82,11 +110,17 @@
             "url": {
               "raw": "http://localhost:8080/api/usuarios",
               "protocol": "http",
-              "host": ["localhost"],
+              "host": [
+                "localhost"
+              ],
               "port": "8080",
-              "path": ["api", "usuarios"]
+              "path": [
+                "api",
+                "usuarios"
+              ]
             }
-          }
+          },
+          "response": []
         },
         {
           "name": "Listar Usuários",
@@ -96,11 +130,17 @@
             "url": {
               "raw": "http://localhost:8080/api/usuarios",
               "protocol": "http",
-              "host": ["localhost"],
+              "host": [
+                "localhost"
+              ],
               "port": "8080",
-              "path": ["api", "usuarios"]
+              "path": [
+                "api",
+                "usuarios"
+              ]
             }
-          }
+          },
+          "response": []
         },
         {
           "name": "Buscar Usuário por ID",
@@ -110,18 +150,28 @@
             "url": {
               "raw": "http://localhost:8080/api/usuarios/1",
               "protocol": "http",
-              "host": ["localhost"],
+              "host": [
+                "localhost"
+              ],
               "port": "8080",
-              "path": ["api", "usuarios", "1"]
+              "path": [
+                "api",
+                "usuarios",
+                "1"
+              ]
             }
-          }
+          },
+          "response": []
         },
         {
           "name": "Atualizar Usuário",
           "request": {
             "method": "PUT",
             "header": [
-              { "key": "Content-Type", "value": "application/json" }
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
             ],
             "body": {
               "mode": "raw",
@@ -130,11 +180,18 @@
             "url": {
               "raw": "http://localhost:8080/api/usuarios/1",
               "protocol": "http",
-              "host": ["localhost"],
+              "host": [
+                "localhost"
+              ],
               "port": "8080",
-              "path": ["api", "usuarios", "1"]
+              "path": [
+                "api",
+                "usuarios",
+                "1"
+              ]
             }
-          }
+          },
+          "response": []
         },
         {
           "name": "Deletar Usuário",
@@ -144,11 +201,18 @@
             "url": {
               "raw": "http://localhost:8080/api/usuarios/1",
               "protocol": "http",
-              "host": ["localhost"],
+              "host": [
+                "localhost"
+              ],
               "port": "8080",
-              "path": ["api", "usuarios", "1"]
+              "path": [
+                "api",
+                "usuarios",
+                "1"
+              ]
             }
-          }
+          },
+          "response": []
         }
       ]
     },
@@ -160,7 +224,10 @@
           "request": {
             "method": "POST",
             "header": [
-              { "key": "Content-Type", "value": "application/json" }
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
             ],
             "body": {
               "mode": "raw",
@@ -169,11 +236,17 @@
             "url": {
               "raw": "http://localhost:8080/api/restaurantes",
               "protocol": "http",
-              "host": ["localhost"],
+              "host": [
+                "localhost"
+              ],
               "port": "8080",
-              "path": ["api", "restaurantes"]
+              "path": [
+                "api",
+                "restaurantes"
+              ]
             }
-          }
+          },
+          "response": []
         },
         {
           "name": "Listar Restaurantes",
@@ -183,11 +256,17 @@
             "url": {
               "raw": "http://localhost:8080/api/restaurantes",
               "protocol": "http",
-              "host": ["localhost"],
+              "host": [
+                "localhost"
+              ],
               "port": "8080",
-              "path": ["api", "restaurantes"]
+              "path": [
+                "api",
+                "restaurantes"
+              ]
             }
-          }
+          },
+          "response": []
         },
         {
           "name": "Buscar Restaurante por ID",
@@ -197,18 +276,28 @@
             "url": {
               "raw": "http://localhost:8080/api/restaurantes/1",
               "protocol": "http",
-              "host": ["localhost"],
+              "host": [
+                "localhost"
+              ],
               "port": "8080",
-              "path": ["api", "restaurantes", "1"]
+              "path": [
+                "api",
+                "restaurantes",
+                "1"
+              ]
             }
-          }
+          },
+          "response": []
         },
         {
           "name": "Atualizar Restaurante",
           "request": {
             "method": "PUT",
             "header": [
-              { "key": "Content-Type", "value": "application/json" }
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
             ],
             "body": {
               "mode": "raw",
@@ -217,11 +306,18 @@
             "url": {
               "raw": "http://localhost:8080/api/restaurantes/1",
               "protocol": "http",
-              "host": ["localhost"],
+              "host": [
+                "localhost"
+              ],
               "port": "8080",
-              "path": ["api", "restaurantes", "1"]
+              "path": [
+                "api",
+                "restaurantes",
+                "1"
+              ]
             }
-          }
+          },
+          "response": []
         },
         {
           "name": "Deletar Restaurante",
@@ -231,11 +327,18 @@
             "url": {
               "raw": "http://localhost:8080/api/restaurantes/1",
               "protocol": "http",
-              "host": ["localhost"],
+              "host": [
+                "localhost"
+              ],
               "port": "8080",
-              "path": ["api", "restaurantes", "1"]
+              "path": [
+                "api",
+                "restaurantes",
+                "1"
+              ]
             }
-          }
+          },
+          "response": []
         }
       ]
     },
@@ -247,7 +350,10 @@
           "request": {
             "method": "POST",
             "header": [
-              { "key": "Content-Type", "value": "application/json" }
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
             ],
             "body": {
               "mode": "raw",
@@ -256,11 +362,17 @@
             "url": {
               "raw": "http://localhost:8080/api/itens-cardapio",
               "protocol": "http",
-              "host": ["localhost"],
+              "host": [
+                "localhost"
+              ],
               "port": "8080",
-              "path": ["api", "itens-cardapio"]
+              "path": [
+                "api",
+                "itens-cardapio"
+              ]
             }
-          }
+          },
+          "response": []
         },
         {
           "name": "Listar Todos os Itens",
@@ -270,11 +382,17 @@
             "url": {
               "raw": "http://localhost:8080/api/itens-cardapio",
               "protocol": "http",
-              "host": ["localhost"],
+              "host": [
+                "localhost"
+              ],
               "port": "8080",
-              "path": ["api", "itens-cardapio"]
+              "path": [
+                "api",
+                "itens-cardapio"
+              ]
             }
-          }
+          },
+          "response": []
         },
         {
           "name": "Buscar Item por ID",
@@ -284,18 +402,28 @@
             "url": {
               "raw": "http://localhost:8080/api/itens-cardapio/1",
               "protocol": "http",
-              "host": ["localhost"],
+              "host": [
+                "localhost"
+              ],
               "port": "8080",
-              "path": ["api", "itens-cardapio", "1"]
+              "path": [
+                "api",
+                "itens-cardapio",
+                "1"
+              ]
             }
-          }
+          },
+          "response": []
         },
         {
           "name": "Atualizar Item",
           "request": {
             "method": "PUT",
             "header": [
-              { "key": "Content-Type", "value": "application/json" }
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
             ],
             "body": {
               "mode": "raw",
@@ -304,11 +432,18 @@
             "url": {
               "raw": "http://localhost:8080/api/itens-cardapio/1",
               "protocol": "http",
-              "host": ["localhost"],
+              "host": [
+                "localhost"
+              ],
               "port": "8080",
-              "path": ["api", "itens-cardapio", "1"]
+              "path": [
+                "api",
+                "itens-cardapio",
+                "1"
+              ]
             }
-          }
+          },
+          "response": []
         },
         {
           "name": "Deletar Item",
@@ -318,11 +453,18 @@
             "url": {
               "raw": "http://localhost:8080/api/itens-cardapio/1",
               "protocol": "http",
-              "host": ["localhost"],
+              "host": [
+                "localhost"
+              ],
               "port": "8080",
-              "path": ["api", "itens-cardapio", "1"]
+              "path": [
+                "api",
+                "itens-cardapio",
+                "1"
+              ]
             }
-          }
+          },
+          "response": []
         }
       ]
     }
